@@ -15,9 +15,11 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->get('/task/{id}', 'TaskController@show');
-$router->put('/task/{id}', 'TaskController@update');
-
-$router->post('/task', 'TaskController@create');
-$router->post('/batch/task', 'BatchTaskController@create');
-$router->get('/task', 'TaskController@index');
+$router->group(['prefix' => 'api'], function() use ($router) {
+    $router->get('/task/{id}', 'TaskController@show');
+    $router->put('/task/{id}', 'TaskController@update');
+    
+    $router->post('/task', 'TaskController@create');
+    $router->post('/batch/task', 'BatchTaskController@create');
+    $router->get('/task', 'TaskController@index');
+});

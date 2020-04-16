@@ -12,6 +12,11 @@ Thank you for considering contributing to Lumen! The contribution guide can be f
 
 Thank you Stackoverflow [Lumen Middleware to track execution time](https://stackoverflow.com/questions/34778433/how-to-add-execution-time-taken-for-an-api-to-respond-in-lumen-framework-in-the)
 
+
+## Apologies
+
+Sorry for not adding any tests!
+
 ## Security Vulnerabilities
 
 If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
